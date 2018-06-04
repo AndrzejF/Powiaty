@@ -1,0 +1,34 @@
+<!-- ./templates/index.html -->
+<html>
+  <head>
+    <title>#Wybór województwa#</title>
+  </head>
+<body>
+  <h7>
+    <!-- wyświetlamy komunikaty z funkcji flash -->
+    <p>
+      <h4>Wybierz województwo:</h4>
+    </p>
+    <!-- formularz z quizem -->
+    <form method="POST">
+        <!-- przeglądamy listę pytań -->
+        <p>
+          <select name="wybor">
+            {% for i,w in lista %}
+              <!-- wyświetlamy treść pytania -->
+            <option value = "{{ i }}" >{{w}}</option>
+          {% endfor %}
+          </select>
+        </p>
+        <!-- przycisk wysyłający wypełniony formularz -->
+        <button type="submit">Pokaż powiaty</button>
+    </form>
+  </h7>
+  <p>
+    {% for lista in get_flashed_messages() %}
+      {{ lista }}
+      <br>
+    {% endfor %}
+  </p>
+</body>
+</html>

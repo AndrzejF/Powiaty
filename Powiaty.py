@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # ./Powiaty.py
 
-# -*- coding: utf-8 -*-
 import pyodbc
 from flask import Flask
 from flask import render_template

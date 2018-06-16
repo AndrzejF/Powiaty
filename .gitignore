@@ -1,5 +1,7 @@
 # Plik z has³ami
 LOGIN.txt
+/.idea/
+.idea/workspace.xml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
